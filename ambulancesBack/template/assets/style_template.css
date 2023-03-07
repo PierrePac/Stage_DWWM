@@ -1,0 +1,41 @@
+:root {
+  --primary-theme_1: #0c327d;
+  --secondary-theme_1: #021c4d;
+  --tertiary-theme_1: #c0c6ca;
+  --box-shadow-theme_1: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+  --primary-theme_2: #0e278c;
+  --tertiary-theme_2: #c0c6ca;
+  --secondary-theme_2: #2b4ed9;
+  --primary-theme_3: #0e278c;
+  --secondary-theme_3: #2b4ed9;
+  --tertiary-theme_3: #c0c6ca;
+}
+
+.container-fluid {
+  display: grid;
+  width: 100vw;
+  grid-auto-rows: 100px;
+  grid-template-columns: 9% 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
+  grid-template-rows: 20px repeat();
+  color: black;
+  position: relative;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+@media screen and (min-width: 700px) {
+  .container-fluid {
+    width: 90vw;
+    margin-left: 5vw;
+    grid-template-rows: auto;
+  }
+}
+
+.fb{
+  display: none;
+}
